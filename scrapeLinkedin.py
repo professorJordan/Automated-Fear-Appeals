@@ -36,7 +36,7 @@ class extraction:
     def getFile(self):
         try:
             #first, get connection.
-            connect_str = "dbname='testpython' user='jordan' host='localhost' " + "password='labrat'"
+            connect_str = "dbname='testpython' user='' host='localhost' " + "password=''"
             conn = psycopg2.connect(connect_str)
             cursor = conn.cursor()
          
@@ -256,7 +256,7 @@ class extraction:
         
         try:
             #first, get connection.
-            connect_str = "dbname='testpython' user='jordan' host='localhost' " + "password='labrat'"
+            connect_str = "dbname='testpython' user='' host='localhost' " + "password=''"
             conn = psycopg2.connect(connect_str)
             cursor = conn.cursor()
          
@@ -284,7 +284,7 @@ class extraction:
         
         try:
             #first, get connection.
-            connect_str = "dbname='testpython' user='jordan' host='localhost' " + "password='labrat'"
+            connect_str = "dbname='testpython' user='' host='localhost' " + "password=''"
             conn = psycopg2.connect(connect_str)
             cursor = conn.cursor()
          
@@ -313,7 +313,7 @@ class extraction:
         
         try:
             #first, get connection.
-            connect_str = "dbname='testpython' user='jordan' host='localhost' " + "password='labrat'"
+            connect_str = "dbname='testpython' user='' host='localhost' " + "password=''"
             conn = psycopg2.connect(connect_str)
             cursor = conn.cursor()
          
@@ -342,7 +342,7 @@ class extraction:
         
         try:
             #first, get connection.
-            connect_str = "dbname='testpython' user='jordan' host='localhost' " + "password='labrat'"
+            connect_str = "dbname='testpython' user='' host='localhost' " + "password=''"
             conn = psycopg2.connect(connect_str)
             cursor = conn.cursor()
          
@@ -371,7 +371,7 @@ class extraction:
         
         try:
             #first, get connection.
-            connect_str = "dbname='testpython' user='jordan' host='localhost' " + "password='labrat'"
+            connect_str = "dbname='testpython' user='' host='localhost' " + "password=''"
             conn = psycopg2.connect(connect_str)
             cursor = conn.cursor()
          
@@ -401,7 +401,7 @@ class extraction:
     def saveResults(self):                
         try:
             #first, get connection.
-            connect_str = "dbname='testpython' user='jordan' host='localhost' " + "password='labrat'"
+            connect_str = "dbname='testpython' user='' host='localhost' " + "password=''"
             conn = psycopg2.connect(connect_str)
             cursor = conn.cursor()
          
@@ -448,10 +448,6 @@ class extraction:
 #*************************************************************************
 
 uid = '1234567899'
-#html = "view-source_https___www.linkedin.com_in_alec-yasinsac-3b5188_.html"
-#html = "view-source_https___www.linkedin.com_in_jordan-shropshire-52709513_.html"
-#html = "view-source_https___www.linkedin.com_in_mayor-karin-wilson-4212a09a_.html"
-#html = "view-source_https___www.linkedin.com_in_eric-steward-ph-d-p-e-a3656864_.html"
 html = "linkedinProfile.html"
 client = extraction(uid)
 client.orchestrator()
