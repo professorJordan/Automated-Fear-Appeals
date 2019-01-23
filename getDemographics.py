@@ -44,7 +44,7 @@ class Preparation:
 
 
     def getExternalURL(imgName):
-        ServerAddress="http://18.219.227.178/"
+        ServerAddress="http://.../"
         #create externally-accessable img URL
         externalURL = ServerAddress+imgName
         return(externalURL)
@@ -83,7 +83,7 @@ class CheckDB:
             ethnicity = actualDemographics[1]
             age = actualDemographics[2]
             #now, get db connection.
-            connect_str = "dbname='testpython' user='jordan' host='localhost' " + "password='labrat'"
+            connect_str = "dbname='testpython' user='' host='localhost' " + "password=''"
             conn = psycopg2.connect(connect_str)
             cursor = conn.cursor()
             #write to demographics table
@@ -98,7 +98,7 @@ class CheckDB:
     def determineNeed(uid):
         try:
             #first, get db connection.
-            connect_str = "dbname='testpython' user='jordan' host='localhost' " + "password='labrat'"
+            connect_str = "dbname='testpython' user='' host='localhost' " + "password=''"
             conn = psycopg2.connect(connect_str)
             cursor = conn.cursor()
             #write to demographics table
@@ -113,7 +113,7 @@ class CheckDB:
     def isThereAPic(uid):
         try:
             #first, get db connection.
-            connect_str = "dbname='testpython' user='jordan' host='localhost' " + "password='labrat'"
+            connect_str = "dbname='testpython' user='' host='localhost' " + "password=''"
             conn = psycopg2.connect(connect_str)
             cursor = conn.cursor()
             #write to demographics table
@@ -135,8 +135,8 @@ class CheckDB:
 class Demographics:
     def processImage(image_url):
         http_url = 'https://api-us.faceplusplus.com/facepp/v3/detect'
-        key = "C3Lf9084OoS3h1lpWBTLLsEPmGqM9EYv"
-        secret = "qu8lrttoksuJchj_Ex3y3HVEcOrWk2fe"
+        key = ""
+        secret = ""
         attributes="gender,age,ethnicity"
         url = image_url
 
