@@ -31,7 +31,7 @@ class register:
         
         try:
             #first, get connection.
-            connect_str = "dbname='testpython' user='jordan' host='localhost' " + "password='labrat'"
+            connect_str = "dbname='testpython' user='' host='localhost' " + "password=''"
             conn = psycopg2.connect(connect_str)
             cursor = conn.cursor()
          
