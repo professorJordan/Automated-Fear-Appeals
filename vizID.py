@@ -166,7 +166,7 @@ class CheckDB:
     def determineNeed(uid):
         try:
             #first, get db connection.
-            connect_str = "dbname='testpython' user='jordan' host='localhost' " + "password='labrat'"
+            connect_str = "dbname='testpython' user='' host='localhost' " + "password=''"
             conn = psycopg2.connect(connect_str)
             cursor = conn.cursor()
             #do query
@@ -181,7 +181,7 @@ class CheckDB:
     def saveResults(uid, img):
         try:
             # get db connection.
-            connect_str = "dbname='testpython' user='jordan' host='localhost' " + "password='labrat'"
+            connect_str = "dbname='testpython' user='' host='localhost' " + "password=''"
             conn = psycopg2.connect(connect_str)
             cursor = conn.cursor()
             #write to demographics table
