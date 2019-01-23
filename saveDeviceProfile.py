@@ -24,7 +24,7 @@ class profile:
     def hasAccount(self):
         try:
             #first, get connection.
-            connect_str = "dbname='testpython' user='jordan' host='localhost' " + "password='labrat'"
+            connect_str = "dbname='testpython' user='' host='localhost' " + "password=''"
             conn = psycopg2.connect(connect_str)
             cursor = conn.cursor()
          
@@ -45,7 +45,7 @@ class profile:
     def doupdate(self):
         try: 
             #first, get connection.
-            connect_str = "dbname='testpython' user='jordan' host='localhost' " + "password='labrat'"
+            connect_str = "dbname='testpython' user='' host='localhost' " + "password=''"
             conn = psycopg2.connect(connect_str)
             cursor = conn.cursor()
             dt = datetime.now()
