@@ -34,7 +34,7 @@ class create:
 
         #before we make the folders we want to be sure the uid is valid.
         try:
-            connect_str = "dbname='testpython' user='jordan' host='localhost' " + "password='labrat'"
+            connect_str = "dbname='testpython' user='' host='localhost' " + "password=''"
             conn = psycopg2.connect(connect_str)
             cursor = conn.cursor()
 
