@@ -42,7 +42,7 @@ class buildProfile:
     def getUsersData(self):
         try:
             #first, get db connection.
-            connect_str = "dbname='testpython' user='jordan' host='localhost' " + "password='labrat'"
+            connect_str = "dbname='testpython' user='' host='localhost' " + "password=''"
             conn = psycopg2.connect(connect_str)
             cursor = conn.cursor()
 
